@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Shop</title>
+    <title>Shiba Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
+	
+
+
 </head>
 
 <body>
@@ -30,10 +38,10 @@
 
         <div class="hero-body">
             <p class="title">
-                Cat shop
+                SHIBA SHOP
             </p>
             <p class="subtitle">
-                🐱 🐱 🐱
+                🐶 🐶 🐶 
             </p>
         </div>
     </section>
@@ -57,15 +65,15 @@
                 {% endfor %}
             </div>
             <hr>
-            <h1 class="title">Cat list</h1>
+            <h1 class="title">Shiba List</h1>
             <ol>
-                {% for cat in session.stuff %}
+                {% for shiba in session.stuff %}
                 <li>
-                    You got a(n) <b>{{cat.0}}</b> 🐱
-                    {% if cat.0 == "FLAG" %}<code>FLAG{lab_flag}</code>{% endif %}
+                    You got a(n) <b>{{shiba.0}}</b> 🐶
+                    {% if shiba.0 == "FLAG" %}<code>isipCTF{B3w4r3_0f_th3_5h1b4}</code>{% endif %}
                 </li>
                 {% else %}
-                    <p>You don't have any cat yet...</p>
+                    <p>You don't have any shiba yet...</p>
                 {% endfor %}
             </ol>
         </div>
