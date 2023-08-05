@@ -4,12 +4,12 @@ import secrets
 app = Flask(__name__)
 app.secret_key = secrets.token_bytes()
 
-items = {5427: ("White Cat", 1024),
-         5428: ("Orange Cat", 1024),
-         5429: ("Ranibow Cat", 4096),
+items = {5427: ("Black Shiba ", 1024),
+         5428: ("Red Shiba", 1024),
+         5429: ("White Shiba", 4096),
          5430: ("FLAG", 2147483648),
-         5431: ("Evil Cat", 65536),
-         5432: ("Null Cat", 0)}
+         5431: ("Evil Shiba", 65536),
+         5432: ("Null Shiba", 0)}
 
 
 @app.route("/")
