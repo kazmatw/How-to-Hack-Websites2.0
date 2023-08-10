@@ -56,7 +56,7 @@ def login():
     cur.close()
 
     if res['username'] == 'admin' and res['password'] == password:
-        return "FLAG: FLAG{lab_flag}"
+        return "isipCTF{SQL1nj3c710n_1s_4lw4y5_345y}"
 
     return redirect("/?failed")
 

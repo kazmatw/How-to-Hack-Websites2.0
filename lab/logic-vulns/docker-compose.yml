@@ -6,4 +6,4 @@ services:
     volumes:
       - ./app/:/app
     ports:
-      - 80:80/tcp
+      - 8100:80/tcp

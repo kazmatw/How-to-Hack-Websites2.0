@@ -59,7 +59,7 @@ def login():
     cur.close()
 
     if res:
-        return "FLAG{lab_flag}"
+        return "isipCTF{SQL1nj3c710n_1s_S0_345y}"
 
     return redirect("/?failed")
 
