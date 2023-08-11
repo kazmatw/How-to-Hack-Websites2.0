@@ -7,7 +7,7 @@ app.secret_key = secrets.token_bytes()
 items = {5427: ("Black Shiba ", 1024),
          5428: ("Red Shiba", 1024),
          5429: ("White Shiba", 4096),
-         5430: ("FLAG", 2147483648),
+         5430: ("FLAG", 99999999),
          5431: ("Evil Shiba", 65536),
          5432: ("Null Shiba", 0)}
 
@@ -30,9 +30,10 @@ def view_item(item_id):
 def buy_item():
     cost = int(request.form.get("cost"))
     item_id = int(request.form.get("item_id"))
-    if cost > session['money']:
+    wallet = int(request.form.get("wallet", session['money']))
+    if cost > wallet:
         return "<script>alert(`You don't have enough money Q_Q`); location.href='/';</script>"
-    session['money'] -= cost
+    session['money'] = wallet - cost
     session['stuff'].append(items[item_id])
     return "<script>alert(`Success!`); location='/'</script>"
 

@@ -25,7 +25,8 @@
                         <div class="field">
                             <input type="hidden" name="item_id" value="{{item_id}}">
                             <input type="hidden" name="cost" value="{{item.1}}">
-                            <button class="button is-success is-fullwidth">Buy!</button>
+			    <input type="hidden" name="wallet" value="${{session.money}}">
+			    <button class="button is-success is-fullwidth">Buy!</button>
                         </div>
                         <div class="field">
                             <a href="/" class="button is-danger is-fullwidth">Cancel</a>
