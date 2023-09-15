@@ -8,4 +8,4 @@ services:
         ports:
             - 8500:80/tcp
         environment:
-            - FLAG=FLAG{lab_flag}
+            - FLAG=NCKUCTF{SSRF_Sneaky_Requests}

@@ -51,7 +51,7 @@ def login():
 def flag():
     if 'user' in session:
         if session['user'] == 'admin':
-            return 'FLAG{lab_flag}'
+            return 'NCKUCTF{Scripted_Att4ck_Inject}'
         return f'<p>嗨，{session["user"]}。只有 <code>admin</code> 能看到 FLAG 喔 :D</p>' +\
             '<a href="/logout">Logout</a>'
     return "wut?"

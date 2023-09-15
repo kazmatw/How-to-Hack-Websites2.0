@@ -8,7 +8,7 @@ services:
         ports:
             - 8400:80/tcp
         environment:
-            - FLAG=FLAG{lab_flag}
+            - FLAG=NCKUCTF{Includ3_Th3_Unseen}
     hakka-md:
         image: php:7.4-apache
         volumes:

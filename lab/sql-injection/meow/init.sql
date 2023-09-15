@@ -17,4 +17,4 @@ INSERT IGNORE INTO `news` (`id`, `title`, `content`) VALUES
 (4, 'dog', 'oAo'),
 (5, 'shark', 'A.');
 
-INSERT IGNORE INTO `flag` (`id`, `the_flag`) VALUES (1, 'FLAG{lab_flag}');
+INSERT IGNORE INTO `flag` (`id`, `the_flag`) VALUES (1, 'NCKUCTF{C4tch_Th3_Meow}');
